@@ -1,0 +1,370 @@
+The OSI Model
+What is the OSI Model?
+
+The Open Systems Interconnection (OSI) Model is a conceptual framework that explains how data travels from one device to another across a network.
+
+It consists of 7 layers, where each layer performs a specific function before passing the data to the next layer.
+
+The 7 OSI Layers
+Layer 7 - Application
+Closest layer to the user.
+Provides network services to applications.
+Responsible for user interaction with network services.
+
+Examples
+
+HTTP / HTTPS
+FTP
+SMTP
+DNS
+Layer 6 - Presentation
+
+Responsible for formatting data so different systems can understand it.
+
+Functions include:
+
+Encryption
+Decryption
+Compression
+Character encoding
+Data formatting
+Layer 5 - Session
+
+Manages communication sessions between devices.
+
+Responsibilities:
+
+Starts sessions
+Maintains sessions
+Ends sessions
+
+Examples include keeping users logged into websites or maintaining video conference sessions.
+
+Layer 4 - Transport
+
+Responsible for end-to-end communication.
+
+Functions:
+
+Segmentation
+Error recovery
+Flow control
+Reliability
+
+Protocols:
+
+TCP (Reliable)
+UDP (Fast but unreliable)
+
+Transport layer uses port numbers to identify applications.
+
+Layer 3 - Network
+
+Responsible for moving packets between different networks.
+
+Functions:
+
+Logical addressing
+Routing
+Path selection
+
+Uses:
+
+IP Addresses
+Routers
+Layer 2 - Data Link
+
+Responsible for communication on the local network.
+
+Functions:
+
+MAC addressing
+Frame creation
+Error detection
+
+Devices:
+
+Switches
+NICs
+
+Uses MAC addresses instead of IP addresses.
+
+Layer 1 - Physical
+
+Responsible for transmitting raw bits.
+
+Includes:
+
+Ethernet cables
+Fiber optics
+Wireless signals
+Electrical and optical signals
+
+Devices:
+
+Hubs
+Repeaters
+Cables
+Encapsulation
+
+As data travels down the OSI model:
+
+Application Data
+
+↓
+
+Segments (Layer 4)
+
+↓
+
+Packets (Layer 3)
+
+↓
+
+Frames (Layer 2)
+
+↓
+
+Bits (Layer 1)
+
+The receiving device performs de-encapsulation, reversing the process.
+
+Mnemonic
+
+Top → Bottom
+
+All People Seem To Need Data Processing
+
+Bottom → Top
+
+Please Do Not Throw Sausage Pizza Away
+
+Networking Devices
+
+Networking devices connect computers and direct traffic efficiently.
+
+Hub
+
+A hub is a basic networking device.
+
+Characteristics:
+
+Broadcasts data to every connected device
+No intelligence
+Half-duplex
+Causes collisions
+Operates at Layer 1
+
+Not commonly used today.
+
+Switch
+
+A switch intelligently forwards data.
+
+Characteristics:
+
+Learns MAC addresses
+Sends traffic only to the intended device
+Reduces collisions
+Improves performance
+Operates at Layer 2
+
+Most common device inside LANs.
+
+Router
+
+Routers connect different networks.
+
+Responsibilities:
+
+Route packets
+Connect LANs to WANs
+Choose best path
+Separate broadcast domains
+
+Operates at Layer 3.
+
+Firewall
+
+A firewall controls network traffic.
+
+Functions:
+
+Allow traffic
+Block traffic
+Filter ports
+Filter protocols
+Security enforcement
+
+Can be hardware or software.
+
+Wireless Access Point (WAP)
+
+Provides wireless connectivity.
+
+Responsibilities:
+
+Connect Wi-Fi devices
+Bridge wireless devices to wired networks
+
+Does not perform routing by itself.
+
+Modem
+
+Converts signals between:
+
+ISP connection
+Home network
+
+Common examples:
+
+DSL
+Cable
+Fiber ONT
+Bridge
+
+Connects two LAN segments.
+
+Functions:
+
+Filters traffic
+Reduces collisions
+
+Largely replaced by switches.
+
+Repeater
+
+Repeater regenerates weak signals.
+
+Purpose:
+
+Extend cable distance
+Improve signal quality
+
+Layer 1 device.
+
+Gateway
+
+A gateway connects different types of networks or protocols.
+
+Examples:
+
+Internet gateway
+Protocol translation
+
+Often refers to the default gateway (router).
+
+Networking Functions
+
+Networking functions describe how devices communicate efficiently across networks.
+
+Bandwidth
+
+Bandwidth is the maximum amount of data that can be transmitted over a network in a given amount of time.
+
+Measured in:
+
+Mbps
+Gbps
+
+Higher bandwidth allows more data to be transmitted.
+
+Throughput
+
+Throughput is the actual amount of data successfully transferred.
+
+Usually lower than bandwidth due to:
+
+Congestion
+Errors
+Hardware limitations
+Latency
+
+Latency is the delay between sending and receiving data.
+
+Measured in milliseconds (ms).
+
+Lower latency is better.
+
+Jitter
+
+Jitter is the variation in latency over time.
+
+High jitter causes:
+
+Choppy voice calls
+Laggy video meetings
+Poor streaming
+Packet Loss
+
+Occurs when packets never reach their destination.
+
+Causes include:
+
+Congestion
+Damaged cables
+Weak Wi-Fi
+Hardware failures
+
+Results:
+
+Slow applications
+Buffering
+Connection problems
+Duplex
+Half-Duplex
+Send OR receive
+Not simultaneously
+
+Example:
+
+Walkie-talkies
+
+Full-Duplex
+Send AND receive simultaneously
+
+Example:
+
+Modern Ethernet networks
+
+Collision Domain
+
+A collision occurs when two devices transmit simultaneously.
+
+Switches create separate collision domains for each port, greatly reducing collisions.
+
+Broadcast Domain
+
+Broadcast traffic is sent to every device within the same network.
+
+Routers separate broadcast domains.
+
+MTU (Maximum Transmission Unit)
+
+The largest packet size that can be transmitted without fragmentation.
+
+Standard Ethernet MTU:
+
+1500 bytes
+
+Quality of Service (QoS)
+
+QoS prioritizes important traffic.
+
+Examples:
+
+Voice calls
+Video conferencing
+Gaming traffic
+
+Ensures critical traffic experiences less delay.
+
+Key Takeaways
+The OSI Model explains how data moves through seven networking layers.
+Switches use MAC addresses to forward traffic within a LAN.
+Routers use IP addresses to connect different networks.
+Firewalls filter traffic to improve security.
+Bandwidth is maximum capacity, while throughput is actual performance.
+Latency, jitter, and packet loss directly affect network quality.
+QoS helps prioritize important network traffic.
+Understanding these concepts forms the foundation for networking and cybersecurity.
