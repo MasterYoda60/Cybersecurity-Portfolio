@@ -1,2 +1,2 @@
 # Cybersecurity-Portfolio
-All my work will be documented here.
+This is my Cybersecurity progress and experience portfolio.
